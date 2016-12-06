@@ -1,0 +1,27 @@
+{
+	"name": "ondrejbouda/symfony-console-application",
+	"description": "Symfony console application with DI",
+	"type": "project",
+
+	"require": {
+		"php": ">=7",
+		"symfony/config": "^3.2",
+		"symfony/console": "^3.1",
+		"symfony/dependency-injection": "^3.2",
+		"symfony/yaml": "^3.2"
+	},
+
+	"autoload":{
+		"psr-4":{
+			"Bouda\\Console\\":"src/Console/"
+		}
+	},
+
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Ondrej Bouda",
+			"email": "ondrej.bouda@gmail.com"
+		}
+	]
+}
