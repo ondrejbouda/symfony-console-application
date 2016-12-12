@@ -39,6 +39,8 @@ class Application extends \Symfony\Component\Console\Application
 		$loader->load('config.yml');
 
 		$this->addCustomCommands();
+
+		$this->container->compile();
 	}
 
 
