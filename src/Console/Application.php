@@ -38,9 +38,9 @@ class Application extends \Symfony\Component\Console\Application
 		$loader = new YamlFileLoader($this->container, new FileLocator(__DIR__ . '/../../config'));
 		$loader->load('config.yml');
 
-		$this->addCustomCommands();
-
 		$this->container->compile();
+
+		$this->addCustomCommands();
 	}
 
 
